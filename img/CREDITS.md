@@ -22,3 +22,17 @@ All photos from Wikimedia Commons, CC0, public domain or CC BY licenses. Resized
 - img/pick-cat-toys.webp: [The Toy Tester - Flickr - Lisa Zins (2020; cropped 2023).jpg](https://commons.wikimedia.org/wiki/File:The_Toy_Tester_-_Flickr_-_Lisa_Zins_(2020;_cropped_2023).jpg), Lisa Zins, CC BY 2.0 https://creativecommons.org/licenses/by/2.0
 
 Logo files in img/brand/ are original PawsAnswered artwork by Atulit.
+- img/dog-chocolate.webp: [Lazy Dog..jpg](https://commons.wikimedia.org/wiki/File:Lazy_Dog..jpg), ROVER_JP, CC BY 2.0 https://creativecommons.org/licenses/by/2.0
+- img/dog-xylitol.webp: [Teddy the dog.jpg](https://commons.wikimedia.org/wiki/File:Teddy_the_dog.jpg), ArtemisiaGentileschiFan, CC0 http://creativecommons.org/publicdomain/zero/1.0/deed.en
+- img/dog-diarrhea.webp: [Pug with his toy - panoramio (2307).jpg](https://commons.wikimedia.org/wiki/File:Pug_with_his_toy_-_panoramio_(2307).jpg), michaelannis, CC BY 3.0 https://creativecommons.org/licenses/by/3.0
+- img/dog-not-eating.webp: [Didja Ever Have One of Those Days . . . (3600198988).jpg](https://commons.wikimedia.org/wiki/File:Didja_Ever_Have_One_of_Those_Days_._._._(3600198988).jpg), Faith Goble from Kentucky, USA, CC BY 2.0 https://creativecommons.org/licenses/by/2.0
+- img/dog-limping.webp: [Black dog, black outfit, snow (16055837880).jpg](https://commons.wikimedia.org/wiki/File:Black_dog,_black_outfit,_snow_(16055837880).jpg), Billie Grace Ward from New York, USA, CC BY 2.0 https://creativecommons.org/licenses/by/2.0
+- img/dog-feeding.webp: [Green Spiral Slow Feeder Dog Bowl.jpg](https://commons.wikimedia.org/wiki/File:Green_Spiral_Slow_Feeder_Dog_Bowl.jpg), ELTORO.VET, CC0 http://creativecommons.org/publicdomain/zero/1.0/deed.en
+- img/dog-temperature.webp: [Bo, lies on a carpet in the White House on July 27, 2009.jpg](https://commons.wikimedia.org/wiki/File:Bo,_lies_on_a_carpet_in_the_White_House_on_July_27,_2009.jpg), The White House (Pete Souza), Public domain 
+- img/cat-lilies.webp: [Lilium longiflorum (Easter lilies) 1.jpg](https://commons.wikimedia.org/wiki/File:Lilium_longiflorum_(Easter_lilies)_1.jpg), James St. John, CC BY 2.0 https://creativecommons.org/licenses/by/2.0
+- img/cat-onions.webp: [Cat - Flickr - bjimmy934.jpg](https://commons.wikimedia.org/wiki/File:Cat_-_Flickr_-_bjimmy934.jpg), Jimmy B from Chiba prefecture, Japan, CC BY 2.0 https://creativecommons.org/licenses/by/2.0
+- img/cat-chocolate.webp: [Kitten-stare.jpg](https://commons.wikimedia.org/wiki/File:Kitten-stare.jpg), Mrmiscellanious, Public domain 
+- img/cat-diarrhea.webp: [2008-11-28 a Calico kitten on the litter box.jpg](https://commons.wikimedia.org/wiki/File:2008-11-28_a_Calico_kitten_on_the_litter_box.jpg), MiNe, CC BY 2.0 https://creativecommons.org/licenses/by/2.0
+- img/cat-not-eating.webp: [A cat pauses over a bowl of food, 2011.jpg](https://commons.wikimedia.org/wiki/File:A_cat_pauses_over_a_bowl_of_food,_2011.jpg), Linda Hosek, Public domain 
+- img/cat-itchy.webp: [Cat Scratching.jpg](https://commons.wikimedia.org/wiki/File:Cat_Scratching.jpg), Asabae2752, CC0 http://creativecommons.org/publicdomain/zero/1.0/deed.en
+- img/cat-temperature.webp: [Cat dozing off on a blanket (Unsplash).jpg](https://commons.wikimedia.org/wiki/File:Cat_dozing_off_on_a_blanket_(Unsplash).jpg), Erik-Jan Leusink, CC0 http://creativecommons.org/publicdomain/zero/1.0/deed.en

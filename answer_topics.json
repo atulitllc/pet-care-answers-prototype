@@ -1,0 +1,22 @@
+{
+ "cats/are-lilies-poisonous-to-cats/": "health",
+ "cats/can-cats-drink-milk/": "food",
+ "cats/can-cats-eat-chocolate/": "food",
+ "cats/can-cats-eat-onions-or-garlic/": "food",
+ "cats/what-is-a-normal-temperature-for-a-cat/": "health",
+ "cats/why-does-my-cat-have-diarrhea/": "health",
+ "cats/why-does-my-cat-knead/": "behavior",
+ "cats/why-is-my-cat-not-eating/": "health",
+ "cats/why-is-my-cat-so-itchy/": "health",
+ "cats/why-is-my-cat-throwing-up/": "health",
+ "dogs/can-dogs-eat-chocolate/": "food",
+ "dogs/can-dogs-eat-grapes/": "food",
+ "dogs/how-often-should-i-bathe-my-dog/": "grooming",
+ "dogs/how-often-should-i-feed-my-dog/": "food",
+ "dogs/is-xylitol-toxic-to-dogs/": "food",
+ "dogs/what-is-a-normal-temperature-for-a-dog/": "health",
+ "dogs/why-does-my-dog-have-diarrhea/": "health",
+ "dogs/why-is-my-dog-eating-grass/": "behavior",
+ "dogs/why-is-my-dog-limping/": "health",
+ "dogs/why-is-my-dog-not-eating/": "health"
+}
