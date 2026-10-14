@@ -1,0 +1,39 @@
+:root{--ink:#2b2420;--mut:#6b6058;--sf:#f6f7f9;--bd:#e5e7eb;--acc:#e8743b;--acc2:#c95a24;--cat:#8b5cf6;--dog:#0e9f6e;--red:#dc2626}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font:16px/1.6 "Nunito",ui-rounded,system-ui,sans-serif}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.sample{background:#fff4ec;color:var(--acc2);text-align:center;font-size:13px;font-weight:700;padding:6px}
+.top{border-bottom:1px solid var(--bd);position:sticky;top:0;background:#fff;z-index:5}.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;gap:10px;align-items:center;text-decoration:none}.logo small{display:block;color:var(--mut);font-size:12px}
+.mono{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--acc),#f5a35c);color:#fff;font-weight:800;font-size:13px}
+.mono.big{width:72px;height:72px;font-size:24px;border-radius:20px}
+nav a{margin-left:18px;text-decoration:none;font-weight:700}nav a:hover{color:var(--acc)}
+.crumbs{font-size:14px;color:var(--mut);margin:18px 0}.crumbs a{text-decoration:none}.crumbs span{margin:0 4px}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;padding:48px 0}
+.eyebrow{font-weight:800;color:var(--acc2);font-size:14px}h1{font-size:clamp(32px,5vw,52px);line-height:1.1;margin:10px 0 14px;letter-spacing:-.02em}h1 em{color:var(--acc);font-style:normal}
+h2{font-size:24px;margin:40px 0 14px}.lead,.muted{color:var(--mut)}.lead{font-size:18px}
+.switch{display:inline-flex;background:var(--sf);border:1px solid var(--bd);border-radius:99px;padding:4px;margin:12px 0}
+.switch button{border:0;background:none;padding:8px 16px;border-radius:99px;font:inherit;font-weight:700;cursor:pointer}.switch .on{background:#fff;box-shadow:0 1px 4px #0002}
+.search{display:flex;gap:8px;background:#fff;border:2px solid var(--bd);border-radius:16px;padding:6px}.search:focus-within{border-color:var(--acc)}
+.search input{flex:1;border:0;font:inherit;font-size:17px;padding:10px;outline:0;min-width:0}.search button,.btn{background:var(--acc);color:#fff;border:0;border-radius:12px;padding:10px 20px;font:inherit;font-weight:800;text-decoration:none;cursor:pointer;display:inline-block}.btn:hover{background:var(--acc2)}
+.note{font-size:13px;color:var(--mut)}.hero-art .blob{aspect-ratio:1;border-radius:46% 54% 60% 40%/50% 45% 55% 50%;background:radial-gradient(circle at 30% 30%,#ffd9bf,#fff1e6 60%,#f6f7f9);display:flex;align-items:center;justify-content:center;gap:10px;font-size:min(110px,14vw)}
+.qgrid,.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.pgrid{grid-template-columns:repeat(4,1fr)}
+.qcard,.pickcard,.topic{background:var(--sf);border:1px solid var(--bd);border-radius:18px;padding:18px;text-decoration:none;display:flex;flex-direction:column;gap:8px;transition:.15s}
+.qcard:hover,.pickcard:hover,.topic:hover{transform:translateY(-2px);border-color:var(--acc);background:#fff}.qcard .arrow{color:var(--acc);font-weight:800}.pickcard small{color:var(--mut)}
+.tag{align-self:flex-start;font-size:12px;font-weight:800;padding:3px 10px;border-radius:99px;background:#fff;border:1px solid var(--bd)}.tag.cats{color:var(--cat)}.tag.dogs{color:var(--dog)}
+.tgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.topic{align-items:center;text-align:center}.ico{font-size:34px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.chip{padding:6px 14px;border:1px solid var(--bd);border-radius:99px;text-decoration:none;font-weight:700;font-size:14px}
+.qa{max-width:760px}.samplepill{display:inline-block;margin-left:6px;font-size:12px;font-weight:800;background:#fff4ec;color:var(--acc2);padding:3px 10px;border-radius:99px}
+.meta{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;color:var(--mut)}.pending{background:var(--sf);border:1px dashed #cbd5e1;padding:2px 10px;border-radius:8px}
+.disc{background:#fffbeb;border:1px solid #fcd34d;border-radius:14px;padding:12px 16px;margin:18px 0}
+.answer{background:var(--sf);border:1px solid var(--bd);border-left:6px solid var(--acc);border-radius:16px;padding:18px 22px;font-size:18px}.answer .lbl{font-size:12px;font-weight:800;text-transform:uppercase;color:var(--acc2);letter-spacing:.06em}.answer p{margin:6px 0 0}
+.red{background:#fef2f2;border:2px solid #fca5a5;border-radius:16px;padding:6px 22px;margin:22px 0}.red h2{color:var(--red);margin:14px 0 6px;font-size:20px}.red li{margin:4px 0}
+.faq details{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:14px 18px;margin-bottom:10px}.faq summary{font-weight:800;cursor:pointer}
+.aff{font-size:14px;background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:10px 14px}
+.prods{display:grid;gap:16px;margin:20px 0}.prod{display:grid;grid-template-columns:200px 1fr;border:1px solid var(--bd);border-radius:20px;overflow:hidden}
+.prod .img{background:var(--sf);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--mut);font-size:12px;min-height:180px}
+.pbody{padding:18px 22px}.pbody h3{margin:6px 0;font-size:22px}.badge{font-size:12px;font-weight:800;color:var(--acc2)}.aff2{display:block;font-size:12px;color:var(--mut);margin-top:6px}
+footer{margin-top:64px;border-top:1px solid var(--bd);padding:28px 0;font-size:14px}.fdisc{background:#fffbeb;border:1px solid #fcd34d;border-radius:12px;padding:10px 14px;font-weight:800}
+.fcols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px}.fcols a{display:block;text-decoration:none;margin:4px 0}.small{color:var(--mut);font-size:12px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:24px 0}.hero-art{display:none}.qgrid,.pgrid{grid-template-columns:1fr}.tgrid{grid-template-columns:repeat(3,1fr)}.prod{grid-template-columns:1fr}.fcols{grid-template-columns:1fr}nav a{margin-left:10px;font-size:14px}.logo small{display:none}}
+.emerg{background:#fff;border:3px solid var(--red);border-radius:16px;padding:4px 22px 10px;margin:22px 0}.emerg h2{color:var(--red);font-size:20px;margin:14px 0 6px}.emerg .cols{columns:2;gap:24px}.emerg a{color:var(--red)}
+.refs{font-size:14px;color:var(--mut)}@media(max-width:800px){.emerg .cols{columns:1}}

@@ -1,0 +1,2 @@
+(function(){var pet="all",q=document.getElementById("q");function f(){var t=(q&&q.value||"").toLowerCase(),n=0;document.querySelectorAll("#qlist .qcard").forEach(function(c){var ok=(pet=="all"||c.dataset.pet==pet)&&c.dataset.q.indexOf(t)>-1;c.hidden=!ok;if(ok)n++});var e=document.getElementById("empty");if(e)e.hidden=n>0}
+document.querySelectorAll(".switch button").forEach(function(b){b.onclick=function(){document.querySelectorAll(".switch button").forEach(function(x){x.classList.remove("on")});b.classList.add("on");pet=b.dataset.pet;f()}});if(q)q.oninput=f})();
