@@ -74,7 +74,7 @@ def info(p):
 ANS = [info(f[:-10]) for f in sorted(glob.glob("cats/*/index.html") + glob.glob("dogs/*/index.html"))]
 json.dump({x["p"]: x["topic"] for x in ANS}, open("answer_topics.json", "w"), indent=1)
 
-def related(p):
+def related(p):  # same logic as seo_site.related_for
     me = next(x for x in ANS if x["p"] == p)
     same_topic = [x for x in ANS if x["pet"] == me["pet"] and x["topic"] == me["topic"] and x["p"] != p]
     same_pet = [x for x in ANS if x["pet"] == me["pet"] and x not in same_topic and x["p"] != p]
@@ -100,9 +100,23 @@ for pet in ("cats", "dogs"):
     open(f, "w").write(str(s))
 for f in glob.glob("topics/*/index.html"):
     t = f.split("/")[1]; mine = [x for x in ANS if x["topic"] == t]
-    if not mine: continue
     s = BS(open(f).read(), "html.parser"); g = s.select_one("main .qgrid")
-    g.clear(); g.append(frag("".join(card(x, "../../") for x in mine))); open(f, "w").write(str(s))
+    for x in s.select("main p.soon"): x.decompose()
+    if g is None:
+        g = frag('<div class="qgrid"></div>').div; s.select_one("main").append(g)
+    g.clear(); g.append(frag("".join(card(x, "../../") for x in mine)))
+    for x in s.select("main > p.muted"):
+        if "coming soon" in x.get_text(): x.decompose()
+    if not mine: g.insert_after(frag('<p class="muted soon">Questions on this topic are coming soon.</p>'))
+    open(f, "w").write(str(s))
+
+# home "Popular questions": 3 dog and 3 cat answers
+HOME = ["dogs/can-dogs-eat-chocolate/", "cats/are-lilies-poisonous-to-cats/", "dogs/can-dogs-eat-grapes/",
+        "cats/why-is-my-cat-throwing-up/", "dogs/how-often-should-i-feed-my-dog/", "cats/why-is-my-cat-not-eating/"]
+s = BS(open("index.html").read(), "html.parser")
+h = [h for h in s.find_all("h2") if h.get_text(strip=True) == "Popular questions"][0]
+g = h.find_next("div", class_="qgrid"); g.clear()
+g.append(frag("".join(card(next(x for x in ANS if x["p"] == q), "") for q in HOME))); open("index.html", "w").write(str(s))
 
 # 5. credits
 s = BS(open("credits/index.html").read(), "html.parser")

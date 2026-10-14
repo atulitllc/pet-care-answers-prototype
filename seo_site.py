@@ -8,30 +8,30 @@ sys.path.insert(0, ROOT); import seo
 LOGOS = "/workspace/atulit-logos/pawsanswered"
 B = "Paws Answered"
 ANSWER_DESC = {
- "cats/can-cats-drink-milk/": "It is best not to give cats milk. The ASPCA explains pets have little lactase to break down lactose, so milk and dairy can cause diarrhea or stomach upset.",
- "cats/why-does-my-cat-knead/": "Kneading is normal. Kittens knead to help milk flow, and adult cats keep doing it when relaxed, to make a comfy spot, or to mark you with scent from their paws.",
- "cats/why-is-my-cat-throwing-up/": "Occasional vomiting, especially of hairballs, may be nothing in a healthy cat. Call your vet if it happens often or comes with other signs of illness.",
- "dogs/can-dogs-eat-grapes/": "No. Grapes, raisins and currants can cause kidney failure in dogs, with no known safe amount. Call a vet or pet poison hotline right away if your dog eats any.",
+ "dogs/can-dogs-eat-grapes/": "No. Grapes, raisins, sultanas and currants can cause vomiting and then kidney injury and failure in dogs. Call a vet or pet poison hotline if your dog eats any.",
  "dogs/how-often-should-i-bathe-my-dog/": "Less often than you might think. The ASPCA says most dogs need a bath no more than a few times a year, and regular brushing keeps them clean in between.",
- "dogs/why-is-my-dog-eating-grass/": "Grass eating is very common in dogs and usually not a sign of illness, VCA notes. Most are not sick first. See a vet if your dog shows stomach discomfort.",
  "dogs/can-dogs-eat-chocolate/": "No. Chocolate has theobromine and caffeine, which can cause vomiting, a racing heart, tremors and seizures in dogs. Call a vet or poison hotline if eaten.",
- "dogs/is-xylitol-toxic-to-dogs/": "Yes. Xylitol in sugar free gum, mints, baked goods and some peanut butter can crash a dog's blood sugar or harm the liver. Call a vet or poison hotline now.",
- "dogs/why-does-my-dog-have-diarrhea/": "Dog diarrhea can come from diet changes, garbage, stress, parasites or infection. Call your vet if it lasts over two days or comes with blood or vomiting.",
- "dogs/why-is-my-dog-not-eating/": "A dog may stop eating due to illness, pain, nausea, mouth problems, stress or poisons. Poor appetite is strongly linked with illness, so call your vet.",
- "dogs/why-is-my-dog-limping/": "Sudden limping in dogs is often a broken nail, sprain, joint injury, fracture or dislocation. Ongoing limping can mean arthritis. See your vet to find out.",
- "dogs/how-often-should-i-feed-my-dog/": "Most adult dogs do well fed once or twice a day, or in two to three equal meals, says VCA. Young puppies may need three or four. Ask your vet how much.",
- "dogs/what-is-a-normal-temperature-for-a-dog/": "Normal rectal temperature for dogs is about 99.5 to 102.5°F per Merck, or 100.5 to 102.5°F per VCA. Learn the signs of fever and when to call your vet.",
+ "dogs/is-xylitol-toxic-to-dogs/": "Yes. Xylitol in sugar free gum, mints, candy and toothpaste can crash a dog's blood sugar within minutes or harm the liver. Call a vet or poison hotline now.",
+ "dogs/how-often-should-i-feed-my-dog/": "Puppies need four meals a day at 8 to 12 weeks, then three, then two. Adult dogs usually need one meal, or two smaller ones for big dogs, says the ASPCA.",
+ "dogs/can-dogs-eat-onions-or-garlic/": "No. Onions, garlic, chives and leeks can upset a dog's stomach and damage red blood cells, causing anemia. Call a vet or poison hotline if your dog eats any.",
+ "dogs/can-dogs-eat-macadamia-nuts/": "No. Macadamia nuts can make dogs weak, wobbly, shaky and overheated within 12 hours, and may cause pancreatitis. Call your vet or poison hotline if eaten.",
+ "dogs/is-ibuprofen-safe-for-dogs/": "No. Ibuprofen is a human pain reliever that can cause bleeding stomach ulcers and kidney damage in dogs. Never give it, and call a vet if your dog swallows any.",
+ "dogs/is-marijuana-toxic-to-dogs/": "Yes. There is no safe dose of marijuana for dogs. Eating it or breathing the smoke can cause stumbling, leaking urine and seizures. Call a vet or hotline.",
+ "dogs/can-dogs-eat-raw-bread-dough/": "No. Raw yeast dough can swell in a dog's stomach and cause bloat, and the yeast makes alcohol that can poison them. Call your vet or poison hotline right away.",
+ "cats/can-cats-drink-milk/": "It is best not to give cats milk. The ASPCA explains pets have little lactase to break down lactose, so milk and dairy can cause diarrhea or stomach upset.",
+ "cats/why-is-my-cat-throwing-up/": "Occasional vomiting and a hairball every week or two can be normal. See your vet if your cat vomits more than once a week or seems unwell, says Cornell.",
+ "cats/why-does-my-cat-have-diarrhea/": "Cat diarrhea often follows a diet change or stress and passes quickly. If it lasts over a day or two and your cat seems unwell, see your vet soon, says Cornell.",
+ "cats/why-is-my-cat-not-eating/": "A cat that stops eating can develop fatty liver, which can be fatal without prompt treatment, says Cornell. Overweight cats are at higher risk. Call your vet.",
+ "cats/why-is-my-cat-so-itchy/": "Fleas are a top reason cats itch. Cornell says flea bites cause intense itching and scratching can lead to infection. Ask your vet about safe flea control.",
+ "cats/how-often-should-i-feed-my-cat/": "Kittens do best with three meals a day until six months, then two until age one. Most adult cats do well fed once or twice a day, says Cornell Feline Health.",
+ "cats/is-tylenol-toxic-to-cats/": "Yes. Acetaminophen in Tylenol and many cold, flu and allergy products is especially dangerous for cats and can cause liver failure. Call a vet if swallowed.",
  "cats/are-lilies-poisonous-to-cats/": "Yes. Any part of a true lily, even pollen or vase water, can cause kidney failure in cats. If your cat touches or chews a lily, get to a vet right away.",
  "cats/can-cats-eat-onions-or-garlic/": "No. Onions, garlic, chives and leeks can upset the stomach and damage red blood cells in cats, which are more sensitive than dogs. Call your vet if eaten.",
- "cats/can-cats-eat-chocolate/": "No. Chocolate has methylxanthines that can cause vomiting, abnormal heart rhythm, tremors and seizures in pets. Darker is worse. Call your vet if eaten.",
- "cats/why-does-my-cat-have-diarrhea/": "Cat diarrhea can come from parasites, infection, toxins, diet changes or food intolerance. Call your vet if it lasts over two days or has blood or vomiting.",
- "cats/why-is-my-cat-not-eating/": "Cats stop eating from illness, pain, mouth problems, nausea or stress. Not eating can lead to fatty liver, so call your vet early, and now after two days.",
- "cats/why-is-my-cat-so-itchy/": "Itching is the most common allergy sign in cats, and fleas are the top cause. Food allergies, mites and ringworm can look alike, so let your vet find out why.",
- "cats/what-is-a-normal-temperature-for-a-cat/": "A cat's normal rectal temperature is about 100.5 to 102.5°F (38.1 to 39.2°C), per Merck and VCA. Learn the signs of a fever and when to call your vet."
+ "cats/can-cats-eat-chocolate/": "No. Chocolate has methylxanthines that can cause vomiting, abnormal heart rhythm, tremors and seizures in pets. Darker is worse. Call your vet if eaten."
 }
 HUB = {
- "cats/": "Plain cat care answers: lilies, chocolate, onions, milk, diarrhea, vomiting, not eating, itching, kneading and normal temperature. Each cites vet sources.",
- "dogs/": "Plain dog care answers: chocolate, xylitol, grapes, diarrhea, not eating, limping, feeding, bathing, grass eating and normal temperature, with vet sources."
+ "cats/": "Plain cat care answers: lilies, chocolate, onions, milk, Tylenol, vomiting, diarrhea, not eating, fleas and how often to feed. Each one cites its sources.",
+ "dogs/": "Plain dog care answers: chocolate, xylitol, grapes, onions, macadamia nuts, bread dough, ibuprofen, marijuana, feeding and bathing, with cited sources."
 }
 
 TOPICS = json.load(open(os.path.join(ROOT, "answer_topics.json")))  # written by add_answers.py
@@ -76,5 +76,30 @@ def build():
         "Not veterinary advice. If your pet is sick or hurt, contact a vet.",
         f"{LOGOS}/wordmark-1200.png", "img/brand/icon-512.png",
         ["Not veterinary advice.", "Vet sources cited.", "Updated Oct 13, 2026.", f"From {B}.", "Cited sources.", "When to see a vet.", "Plain answers with cited sources and clear signs of when to see a vet."], hook)
-    return seo.run(site)
+    r = seo.run(site)
+    build_search()
+    return r
+
+def build_search():
+    """Write search.json (all answers, hubs, topic pages) for the live search in assets/app.js."""
+    from atulit_gfx import icon
+    items = []
+    for p in seo.pages_of(ROOT):
+        seg = p.strip("/").split("/") if p else []
+        if not seg or seg[0] not in ("cats", "dogs", "topics"): continue
+        s = seo.load(ROOT, p); h1 = s.find("h1").get_text(" ", strip=True)
+        if seg[0] == "topics" and not s.select("main .qcard"): continue  # empty "coming soon" topic
+        ans = s.select_one(".answer p"); tag = s.select_one(".qtxt .tag")
+        kind = "answer" if len(seg) == 2 and seg[0] != "topics" else ("hub" if len(seg) == 1 else "topic")
+        pet = seg[0] if seg[0] in ("cats", "dogs") else ""
+        kw = set(re.findall(r"[a-z]+", " ".join(seg).replace("-", " ")))
+        if tag: kw |= set(re.findall(r"[a-z]+", tag.get_text(" ").lower()))
+        for h in s.select("article.qa h2 + p, .faq summary"): kw |= set(re.findall(r"[a-z]{4,}", h.get_text(" ").lower()))
+        items.append(dict(t=h1, u=p, pet=pet, topic=TOPICS.get(p, seg[1] if kind == "topic" else ""), kind=kind,
+                          a=(ans.get_text(" ", strip=True) if ans else (s.select_one("p.lead").get_text(" ", strip=True) if s.select_one("p.lead") else "")),
+                          k=" ".join(sorted(kw))))
+    data = dict(icons={"cats": icon("cat", 18), "dogs": icon("dog", 18), "": icon("list", 18)}, items=items)
+    open(os.path.join(ROOT, "search.json"), "w").write(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
+    print(f"search.json: {len(items)} entries")
+
 if __name__ == "__main__": build()
