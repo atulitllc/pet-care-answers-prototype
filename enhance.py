@@ -4,9 +4,9 @@ import glob, os, re
 from bs4 import BeautifulSoup as BS
 from atulit_gfx import icon, THEME_HEAD, toggle, CREDIT, install_css
 ROOT = os.path.dirname(os.path.abspath(__file__)); os.chdir(ROOT)
-NAV = {"cats/": "cat", "dogs/": "dog", "picks/": "heart", "about/": "info"}
+NAV = {"cats/": "cat", "dogs/": "dog", "about/": "info"}
 TOP = {"health": "stethoscope", "behavior": "paw-print", "food": "bone", "grooming": "bath", "new-pet": "house", "toys": "sparkles"}
-H2 = {"Popular questions": ("circle-help", "#E8743B"), "Browse by topic": ("layers", "#5B3A29"), "Our picks": ("heart", "#E8743B")}
+H2 = {"Popular questions": ("circle-help", "#E8743B"), "Browse by topic": ("layers", "#5B3A29")}
 frag = lambda h: BS(h, "html.parser")
 for f in glob.glob("**/*.html", recursive=True):
     s = BS(open(f).read(), "html.parser"); ch = False

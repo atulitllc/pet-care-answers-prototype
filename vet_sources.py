@@ -33,12 +33,12 @@ A={
   body=[("Cats vomit fairly readily. An occasional episode in a healthy cat, mainly of hair, may be nothing abnormal.",0),("Cats swallow hair when grooming. VCA says to contact your vet if your cat vomits hairballs more than once a month.",0),("Vomiting is a sign, not a diagnosis. It can come with infections, swallowed objects stuck in the gut, toxins, urinary blockage, pancreatitis, liver or kidney disease, thyroid disease, inflammatory bowel disease or cancer.",0),("Vomiting is different from coughing and from regurgitation. A video can help your vet tell them apart.",0)],
   faq=[("Is it normal for a cat to throw up hairballs?","Now and then, yes. VCA says more than once a month is a reason to contact your vet."),("Should I stop feeding my cat after vomiting?","Ask your vet first. Vets usually guide feeding after vomiting, and cats should not go long without eating.")],src=[VCA_VOMIT]),
 }
-BANNER="Prototype · Answers cite vet sources, checked "+D+" · Not yet reviewed by a vet · Not indexed"
+BANNER=None
 for p,a in A.items():
     f=p+"index.html"; s=BeautifulSoup(open(f).read(),"html.parser")
     for x in s.select(".samplepill"): x.decompose()
     b=s.select_one(".sample")
-    if b: b.string=BANNER
+    if b: b.decompose()
     s.select_one(".answer p").string=a["short"]
     h=[x for x in s.find_all("h2") if x.get_text().strip() in ("What is going on","What the sources say")][0]
     h.string="What the sources say"
@@ -52,6 +52,6 @@ for p,a in A.items():
     nxt=sh.find_next_sibling()
     while nxt and nxt.name!="h2": n2=nxt.find_next_sibling(); nxt.decompose(); nxt=n2
     refs="".join(f'<li id="ref{i+1}"><a href="{u}" rel="nofollow">{t}</a>, checked {D}</li>' for i,(t,u) in enumerate(a["src"]))
-    sh.insert_after(BeautifulSoup(f'<ol class="refs">{refs}</ol><p class="muted small">We summarize these sources in our own words. Dosing or home treatment amounts are never given here. Ask your vet. Reviewed by: Vet review pending.</p>',"html.parser"))
+    sh.insert_after(BeautifulSoup(f'<ol class="refs">{refs}</ol><p class="muted small">We summarize these sources in our own words. Dosing or home treatment amounts are never given here. Ask your vet.</p>',"html.parser"))
     open(f,"w").write(str(s))
 print("updated",len(A))

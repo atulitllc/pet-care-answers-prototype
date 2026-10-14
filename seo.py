@@ -125,8 +125,8 @@ def run(site):
     root = site.root; hook = site.hook or (lambda ctx: {})
     # 1. standard pages
     std = {
-      "privacy/": ("Privacy policy", f"<h1>Privacy policy</h1><p>Last updated {site.updated}.</p><p>{site.brand} is a prototype by Atulit LLC. It has no user accounts, no analytics and no advertising trackers.</p><p>Some features save small preferences or form entries in your browser's local storage. That data stays on your device and is never sent to us. You can clear it at any time in your browser settings.</p><p>Outbound links, including affiliate links marked sponsored, take you to other sites with their own privacy policies.</p><p>Questions: see our <a href=\"../contact/\">contact page</a>.</p>"),
-      "contact/": ("Contact", f"<h1>Contact {H.escape(site.brand)}</h1><p>Last updated {site.updated}.</p><p>{site.brand} is run by Atulit LLC. This is an early prototype and a public contact inbox is not set up yet.</p><p>When it is, the address will be listed here. Until then, you can read <a href=\"../about/\">about us</a> and our <a href=\"../privacy/\">privacy policy</a>.</p>"),
+      "privacy/": ("Privacy policy", f"<h1>Privacy policy</h1><p>Last updated {site.updated}.</p><p>{site.brand} is run by Atulit LLC. It has no user accounts, no analytics and no advertising trackers.</p><p>Some features save small preferences or form entries in your browser's local storage. That data stays on your device and is never sent to us. You can clear it at any time in your browser settings.</p><p>Outbound links, including affiliate links marked sponsored, take you to other sites with their own privacy policies.</p><p>Questions: see our <a href=\"../contact/\">contact page</a>.</p>"),
+      "contact/": ("Contact", f"<h1>Contact {H.escape(site.brand)}</h1><p>Last updated {site.updated}.</p><p>{site.brand} is run by Atulit LLC. A public contact inbox is not set up yet.</p><p>When it is, the address will be listed here. Until then, you can read <a href=\"../about/\">about us</a> and our <a href=\"../privacy/\">privacy policy</a>.</p>"),
     }
     for p, (t, b) in std.items():
         f = os.path.join(root, p, "index.html")
