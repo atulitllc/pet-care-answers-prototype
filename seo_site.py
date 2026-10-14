@@ -65,7 +65,7 @@ def hook(ctx):
     if p in HUB: return dict(titles=[h1], desc=HUB[p])
     if seg[0] == "topics" and len(seg) == 2:
         t = h1 if h1.endswith("Questions for Cats and Dogs") else f"{h1} Questions for Cats and Dogs"
-        return dict(titles=[t], h1=t,
+        return dict(titles=[t], h1=t, index=seg[1] in set(TOPICS.values()),  # empty "coming soon" topics stay noindex
                     desc=f"{h1.replace(' Questions for Cats and Dogs', '')} questions for cats and dogs, answered in plain words. Each answer starts short, lists when to see a vet, and cites its sources.")
     return dict(titles=[h1])
 
