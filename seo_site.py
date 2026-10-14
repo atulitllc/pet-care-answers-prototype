@@ -41,6 +41,6 @@ def build():
     site = seo.Site(ROOT, B, "pawsanswered.com", "pet-care-answers-prototype", INDEXABLE, "Oct 13, 2026", "2026-10-13",
         "Not veterinary advice. If your pet is sick or hurt, contact a vet.",
         f"{LOGOS}/wordmark-1200.png", "img/brand/icon-512.png",
-        ["Not veterinary advice.", "Sample content prototype.", "Updated Oct 13, 2026.", f"From {B}.", "Cited sources.", "When to see a vet.", "Plain answers with cited sources and clear signs of when to see a vet."], hook)
+        ["Not veterinary advice.", "Vet sources cited.", "Updated Oct 13, 2026.", f"From {B}.", "Cited sources.", "When to see a vet.", "Plain answers with cited sources and clear signs of when to see a vet."], hook)
     return seo.run(site)
 if __name__ == "__main__": build()
